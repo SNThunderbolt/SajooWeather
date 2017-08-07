@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28752808E181DD0FB6FDDFF0 /* Pods_SajooWeatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16F8461D428DF44CFB3D78B /* Pods_SajooWeatherTests.framework */; };
+		7563DF15BE8DC4EEE158D435 /* Pods_SajooWeatherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DBAD43E61C93CF85CDB827B /* Pods_SajooWeatherUITests.framework */; };
+		A718F3ADD5F618843FE5A8CE /* Pods_SajooWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF85D1198763EEAE9A96CE9A /* Pods_SajooWeather.framework */; };
 		D1ABEB861F3852920068476A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ABEB851F3852920068476A /* AppDelegate.swift */; };
 		D1ABEB881F3852920068476A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ABEB871F3852920068476A /* ViewController.swift */; };
 		D1ABEB8B1F3852920068476A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1ABEB891F3852920068476A /* Main.storyboard */; };
@@ -34,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7DBAD43E61C93CF85CDB827B /* Pods_SajooWeatherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SajooWeatherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B16F8461D428DF44CFB3D78B /* Pods_SajooWeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SajooWeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0193A3FC70F0FDC48AE780A /* Pods-SajooWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SajooWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-SajooWeather/Pods-SajooWeather.release.xcconfig"; sourceTree = "<group>"; };
+		C5C07D3C2A86020B3A2FDFF5 /* Pods-SajooWeatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SajooWeatherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SajooWeatherTests/Pods-SajooWeatherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C9B10E5596E0D01F998EE8E2 /* Pods-SajooWeatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SajooWeatherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SajooWeatherTests/Pods-SajooWeatherTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE12C228FABB992916EE9B72 /* Pods-SajooWeatherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SajooWeatherUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SajooWeatherUITests/Pods-SajooWeatherUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D1ABEB821F3852920068476A /* SajooWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SajooWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1ABEB851F3852920068476A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1ABEB871F3852920068476A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +56,9 @@
 		D1ABEBA11F3852920068476A /* SajooWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SajooWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1ABEBA51F3852920068476A /* SajooWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SajooWeatherUITests.swift; sourceTree = "<group>"; };
 		D1ABEBA71F3852920068476A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D42C3F04AFEAE7D359A65623 /* Pods-SajooWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SajooWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SajooWeather/Pods-SajooWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		EF85D1198763EEAE9A96CE9A /* Pods_SajooWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SajooWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD4C9AD6C2D92FC091F5CF56 /* Pods-SajooWeatherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SajooWeatherUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SajooWeatherUITests/Pods-SajooWeatherUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A718F3ADD5F618843FE5A8CE /* Pods_SajooWeather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28752808E181DD0FB6FDDFF0 /* Pods_SajooWeatherTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7563DF15BE8DC4EEE158D435 /* Pods_SajooWeatherUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B85D60929CF1D7F2BDACE36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D42C3F04AFEAE7D359A65623 /* Pods-SajooWeather.debug.xcconfig */,
+				C0193A3FC70F0FDC48AE780A /* Pods-SajooWeather.release.xcconfig */,
+				C5C07D3C2A86020B3A2FDFF5 /* Pods-SajooWeatherTests.debug.xcconfig */,
+				C9B10E5596E0D01F998EE8E2 /* Pods-SajooWeatherTests.release.xcconfig */,
+				FD4C9AD6C2D92FC091F5CF56 /* Pods-SajooWeatherUITests.debug.xcconfig */,
+				CE12C228FABB992916EE9B72 /* Pods-SajooWeatherUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D1ABEB791F3852920068476A = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,8 @@
 				D1ABEB991F3852920068476A /* SajooWeatherTests */,
 				D1ABEBA41F3852920068476A /* SajooWeatherUITests */,
 				D1ABEB831F3852920068476A /* Products */,
+				3B85D60929CF1D7F2BDACE36 /* Pods */,
+				E55890970A5EE19CFE74D3D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +155,16 @@
 			path = SajooWeatherUITests;
 			sourceTree = "<group>";
 		};
+		E55890970A5EE19CFE74D3D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF85D1198763EEAE9A96CE9A /* Pods_SajooWeather.framework */,
+				B16F8461D428DF44CFB3D78B /* Pods_SajooWeatherTests.framework */,
+				7DBAD43E61C93CF85CDB827B /* Pods_SajooWeatherUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1ABEBAA1F3852920068476A /* Build configuration list for PBXNativeTarget "SajooWeather" */;
 			buildPhases = (
+				755CA883A27545AFD79C25BD /* [CP] Check Pods Manifest.lock */,
 				D1ABEB7E1F3852920068476A /* Sources */,
 				D1ABEB7F1F3852920068476A /* Frameworks */,
 				D1ABEB801F3852920068476A /* Resources */,
+				A3ECB2EC3426AD6F702E3F6E /* [CP] Embed Pods Frameworks */,
+				EFC76A710D446D25D190B4F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1ABEBAD1F3852920068476A /* Build configuration list for PBXNativeTarget "SajooWeatherTests" */;
 			buildPhases = (
+				BE715C4D2459CE48F983023D /* [CP] Check Pods Manifest.lock */,
 				D1ABEB921F3852920068476A /* Sources */,
 				D1ABEB931F3852920068476A /* Frameworks */,
 				D1ABEB941F3852920068476A /* Resources */,
+				6F401952001750F62D0F0520 /* [CP] Embed Pods Frameworks */,
+				08EA6DA1571D78BAB8DDE3A2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1ABEBB01F3852920068476A /* Build configuration list for PBXNativeTarget "SajooWeatherUITests" */;
 			buildPhases = (
+				D3696A023605D20ABB9CED91 /* [CP] Check Pods Manifest.lock */,
 				D1ABEB9D1F3852920068476A /* Sources */,
 				D1ABEB9E1F3852920068476A /* Frameworks */,
 				D1ABEB9F1F3852920068476A /* Resources */,
+				43F18858491C4A5A8F4644ED /* [CP] Embed Pods Frameworks */,
+				630FA58EC6BDEB5E2C506AE1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,156 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08EA6DA1571D78BAB8DDE3A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SajooWeatherTests/Pods-SajooWeatherTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43F18858491C4A5A8F4644ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SajooWeatherUITests/Pods-SajooWeatherUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		630FA58EC6BDEB5E2C506AE1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SajooWeatherUITests/Pods-SajooWeatherUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F401952001750F62D0F0520 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SajooWeatherTests/Pods-SajooWeatherTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		755CA883A27545AFD79C25BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SajooWeather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3ECB2EC3426AD6F702E3F6E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SajooWeather/Pods-SajooWeather-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SajooWeather/Pods-SajooWeather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE715C4D2459CE48F983023D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SajooWeatherTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3696A023605D20ABB9CED91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SajooWeatherUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFC76A710D446D25D190B4F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SajooWeather/Pods-SajooWeather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D1ABEB7E1F3852920068476A /* Sources */ = {
@@ -412,6 +611,7 @@
 		};
 		D1ABEBAB1F3852920068476A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D42C3F04AFEAE7D359A65623 /* Pods-SajooWeather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SajooWeather/Info.plist;
@@ -424,6 +624,7 @@
 		};
 		D1ABEBAC1F3852920068476A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0193A3FC70F0FDC48AE780A /* Pods-SajooWeather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SajooWeather/Info.plist;
@@ -436,6 +637,7 @@
 		};
 		D1ABEBAE1F3852920068476A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5C07D3C2A86020B3A2FDFF5 /* Pods-SajooWeatherTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -450,6 +652,7 @@
 		};
 		D1ABEBAF1F3852920068476A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9B10E5596E0D01F998EE8E2 /* Pods-SajooWeatherTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -464,6 +667,7 @@
 		};
 		D1ABEBB11F3852920068476A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD4C9AD6C2D92FC091F5CF56 /* Pods-SajooWeatherUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = SajooWeatherUITests/Info.plist;
@@ -477,6 +681,7 @@
 		};
 		D1ABEBB21F3852920068476A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE12C228FABB992916EE9B72 /* Pods-SajooWeatherUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = SajooWeatherUITests/Info.plist;
