@@ -10,16 +10,14 @@ import UIKit
 
 class MainVC: UIViewController {
    
-    var currentWeather : CurrentWeatherClass!
+    var currentWeather = CurrentWeatherGatherer()
     override func viewDidLoad() {
         super.viewDidLoad()
         print("View Did Load...")
         // Do any additional setup after loading the view, typically from a nib.
-        currentWeather = CurrentWeatherGatherer().currentWeatherDownloader {
-            // now we can load downloaded Data
+        currentWeather.currentWeatherDownloader() {
+            print("Appearantly finished downloading and should print currect values..")
         }
     }
 
-    
 }
-

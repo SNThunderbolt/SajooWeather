@@ -23,21 +23,16 @@ class CurrentWeatherGatherer {
         }
     }
     
-    public typealias  FinishedDownload = () -> ()
-    
+  
     private var cityName, countryName, temp, status : String!
     
-    
-    func currentWeatherDownloader (completed: FinishedDownload) -> (CurrentWeatherClass) {
-        var isEqual : Bool = false
+    func currentWeatherDownloader (completed: FinishedDownload) -> (CurrentWeatherClass){
+        
         let weatherURL = URL(string: url)
-        var resString : String = ""
         
         Alamofire.request(weatherURL!).responseJSON {response in
             let result = response.result
-            resString = "\(result)"
             print("This is the result \(result)")
-            
             if let dict = result.value as? Dictionary<String, Any> {
                 if let location = dict["location"] as? Dictionary<String, Any> {
                     if let city = location["name"] as? String {
@@ -62,22 +57,15 @@ class CurrentWeatherGatherer {
                         //another if let for your image icon tag
                     }
                 }
+                 self.currentWeather = CurrentWeatherClass(currentTemp: self.temp, currentStatus: self.status, currentStatusTag: 0, currentCity: self.cityName, currentCountry: self.countryName)
+            }
+            else {
+                 self.currentWeather = CurrentWeatherClass(currentTemp: "خطا", currentStatus: "خطا", currentStatusTag: 0, currentCity: "خطا", currentCountry: "خطا")
             }
         }
         completed()
-        isEqual = (resString == "SUCCESS")
-        if isEqual {
-            //  print("\(Alamofire.request(weatherURL!).response?.accessibilityActivate())")
-            currentWeather = CurrentWeatherClass(currentTemp: temp, currentStatus: status, currentStatusTag: 0, currentCity: cityName, currentCountry: countryName)
-        } else {
-            currentWeather = CurrentWeatherClass(currentTemp: "خطا", currentStatus: "خطا", currentStatusTag: 0, currentCity: "خطا", currentCountry: "خطا")
-        }
-        print ("\(isEqual)")
-        print(temp)
-        print(cityName)
         return currentWeather
     }
-    
     
     
 }
