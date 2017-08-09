@@ -17,6 +17,7 @@
 		D1ABEB901F3852920068476A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1ABEB8E1F3852920068476A /* LaunchScreen.storyboard */; };
 		D1ABEB9B1F3852920068476A /* SajooWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ABEB9A1F3852920068476A /* SajooWeatherTests.swift */; };
 		D1ABEBA61F3852920068476A /* SajooWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ABEBA51F3852920068476A /* SajooWeatherUITests.swift */; };
+		D1D3DB621F3ABB9E0082325D /* A_Soraya.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1D3DB611F3ABB9E0082325D /* A_Soraya.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		D1ABEBA11F3852920068476A /* SajooWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SajooWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1ABEBA51F3852920068476A /* SajooWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SajooWeatherUITests.swift; sourceTree = "<group>"; };
 		D1ABEBA71F3852920068476A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1D3DB611F3ABB9E0082325D /* A_Soraya.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = A_Soraya.ttf; sourceTree = "<group>"; };
 		D42C3F04AFEAE7D359A65623 /* Pods-SajooWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SajooWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SajooWeather/Pods-SajooWeather.debug.xcconfig"; sourceTree = "<group>"; };
 		EF85D1198763EEAE9A96CE9A /* Pods_SajooWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SajooWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4C9AD6C2D92FC091F5CF56 /* Pods-SajooWeatherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SajooWeatherUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SajooWeatherUITests/Pods-SajooWeatherUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		D1ABEB841F3852920068476A /* SajooWeather */ = {
 			isa = PBXGroup;
 			children = (
+				D1D3DB611F3ABB9E0082325D /* A_Soraya.ttf */,
 				D1ABEB851F3852920068476A /* AppDelegate.swift */,
 				D1ABEB871F3852920068476A /* ViewController.swift */,
 				D1ABEB891F3852920068476A /* Main.storyboard */,
@@ -284,6 +287,7 @@
 				D1ABEB901F3852920068476A /* LaunchScreen.storyboard in Resources */,
 				D1ABEB8D1F3852920068476A /* Assets.xcassets in Resources */,
 				D1ABEB8B1F3852920068476A /* Main.storyboard in Resources */,
+				D1D3DB621F3ABB9E0082325D /* A_Soraya.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -712,6 +716,7 @@
 				D1ABEBAC1F3852920068476A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1ABEBAD1F3852920068476A /* Build configuration list for PBXNativeTarget "SajooWeatherTests" */ = {
 			isa = XCConfigurationList;
@@ -720,6 +725,7 @@
 				D1ABEBAF1F3852920068476A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1ABEBB01F3852920068476A /* Build configuration list for PBXNativeTarget "SajooWeatherUITests" */ = {
 			isa = XCConfigurationList;
@@ -728,6 +734,7 @@
 				D1ABEBB21F3852920068476A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
