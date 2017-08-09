@@ -15,9 +15,16 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         print("View Did Load...")
         // Do any additional setup after loading the view, typically from a nib.
-        currentWeather.currentWeatherDownloader() {
-            print("Appearantly finished downloading and should print currect values..")
+        currentWeather.currentWeatherDownloader() { (isDone) -> Void in
+            if isDone {
+                print("Appearantly finished downloading and should print currect values..")
+            }
+            else {
+                print("Still waiting to fetch data")
+            }
+            
         }
+        
     }
 
 }

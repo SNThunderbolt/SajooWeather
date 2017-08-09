@@ -21,7 +21,7 @@ let daysStatement = "&days="
 private var daysValue : Int = 7
 
 
-typealias  FinishedDownload = () -> ()
+//typealias  FinishedDownload = (Bool) -> (Void)
 
 var reqURL = baseURL + key + queryStatement + queryValue + daysStatement + "\(daysValue)"
 

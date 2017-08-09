@@ -13,25 +13,26 @@ class CurrentWeatherGatherer {
     
     
     private var url : String = reqURL
-    private var _currentWeather: CurrentWeatherClass!
+    //private var _currentWeather: CurrentWeatherClass!
     
-    var currentWeather: CurrentWeatherClass {
-      get{
-            return _currentWeather
-        } set {
-            _currentWeather = newValue
-        }
-    }
-    
+//    var currentWeather: CurrentWeatherClass {
+//      get{
+//            return _currentWeather
+//        } set {
+//            _currentWeather = newValue
+//        }
+//    }
+//    
   
-    private var cityName, countryName, temp, status : String!
+    private var cityName, countryName, temp, status, res : String!
     
-    func currentWeatherDownloader (completed: FinishedDownload) -> (CurrentWeatherClass){
+    func currentWeatherDownloader (completed: (Bool) -> Void) {
         
         let weatherURL = URL(string: url)
         
         Alamofire.request(weatherURL!).responseJSON {response in
             let result = response.result
+            self.res = "\(result)"
             print("This is the result \(result)")
             if let dict = result.value as? Dictionary<String, Any> {
                 if let location = dict["location"] as? Dictionary<String, Any> {
@@ -57,14 +58,19 @@ class CurrentWeatherGatherer {
                         //another if let for your image icon tag
                     }
                 }
-                 self.currentWeather = CurrentWeatherClass(currentTemp: self.temp, currentStatus: self.status, currentStatusTag: 0, currentCity: self.cityName, currentCountry: self.countryName)
             }
-            else {
-                 self.currentWeather = CurrentWeatherClass(currentTemp: "خطا", currentStatus: "خطا", currentStatusTag: 0, currentCity: "خطا", currentCountry: "خطا")
-            }
+            
         }
-        completed()
-        return currentWeather
+            if ("\(res)" == "SUCCESS") {
+                CurrentWeatherClass.init(currentTemp: self.temp, currentStatus: self.status, currentStatusTag: 0, currentCity: self.cityName, currentCountry: self.countryName)
+                completed(true)
+            } else {
+//                 CurrentWeatherClass.init(currentTemp: "خطا", currentStatus: "خطا", currentStatusTag: 0, currentCity: "خطا", currentCountry: "خطا")
+                completed(false)
+            }
+        
+        
+        
     }
     
     
