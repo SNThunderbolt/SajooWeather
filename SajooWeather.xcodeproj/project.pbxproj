@@ -169,8 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				D1D3DB611F3ABB9E0082325D /* A_Soraya.ttf */,
-				D1D3DB661F3AD6B60082325D /* CurrentWeatherClass.swift */,
 				D1D3DB6A1F3AEBEB0082325D /* Constants.swift */,
+				D1D3DB661F3AD6B60082325D /* CurrentWeatherClass.swift */,
 				D1D3DB681F3ADE3C0082325D /* CurrentWeatherGatherer.swift */,
 			);
 			name = Model;

@@ -15,7 +15,9 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         print("View Did Load...")
         // Do any additional setup after loading the view, typically from a nib.
-         currentWeather = CurrentWeatherGatherer().currentWeatherDownloader()
+        currentWeather = CurrentWeatherGatherer().currentWeatherDownloader {
+            // now we can load downloaded Data
+        }
     }
 
     

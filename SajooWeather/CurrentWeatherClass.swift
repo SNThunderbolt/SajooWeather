@@ -20,9 +20,9 @@ class CurrentWeatherClass {
     
 
     var currentDate: String {
-//        if _currentDate == nil {
-//            _currentDate = ""
-//        }
+        if _currentDate == nil {
+            _currentDate = ""
+        }
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .long
         dateFormatter.timeStyle = .none
@@ -32,37 +32,37 @@ class CurrentWeatherClass {
     }
     
     var currentTemp: String {
-//        if _currentTemp == nil {
-//            _currentTemp = ""
-//        }
+        if _currentTemp == nil {
+            _currentTemp = ""
+        }
         return _currentTemp
     }
     
     var currentStatus: String {
-//        if _currentStatus == nil{
-//            _currentStatus = ""
-//        }
+        if _currentStatus == nil{
+            _currentStatus = ""
+        }
         return _currentStatus
     }
     
     var currentStatusTag: Int {
-//        if _currentStatusTag == nil {
-//            _currentStatusTag = 0
-//        }
+        if _currentStatusTag == nil {
+            _currentStatusTag = 0
+        }
         return _currentStatusTag
     }
     
     var currentCity: String {
-//        if _currentCity == nil {
-//            _currentCity = ""
-//        }
+        if _currentCity == nil {
+            _currentCity = ""
+        }
         return _currentCity
     }
     
     var currentCountry: String {
-//        if _currentCountry == nil {
-//            _currentCountry = ""
-//        }
+        if _currentCountry == nil {
+            _currentCountry = ""
+        }
         return _currentCountry
     }
     
