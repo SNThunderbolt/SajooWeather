@@ -66,22 +66,18 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         self.currentWeatherImage.image = UIImage(named: currentWeatherData.currentStatusTag)
     }
     func numberOfSections(in tableView: UITableView) -> Int {
-        print("numberofRowsFunctionCalled")
+        //print("numberofRowsFunctionCalled")
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       print("numberOfRowsInSectionCalled")
+       //print("numberOfRowsInSectionCalled")
         return forecastedData.count
-        
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("WTF++++++++++++++")
         if let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath) as? WeatherCell {
-            
             let forecastTmp = forecastedData[indexPath.row]
             cell.updateForecastWeatherCell(forecastWeatherData: forecastTmp)
-            print("this is index path row\(indexPath.row)")
             return cell
             
             
