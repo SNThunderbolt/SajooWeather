@@ -36,8 +36,8 @@ class WeatherCell: UITableViewCell {
             forcastStatusIconImage.image = UIImage(named: forecastWeatherData.forecastWeatherIconTag)
             highTempArrowImage.image = UIImage(named: "arrowsUp")
             lowTempArrowImage.image = UIImage(named: "arrowsDown")
-            forcastHighTempLabel.text = forecastWeatherData.forecstMaxTemp + "°"
-            forcastLowTempLabel.text = forecastWeatherData.forecastMinTemp + "°"
+            forcastHighTempLabel.text = forecastWeatherData.forecstMaxTemp + "°C"
+            forcastLowTempLabel.text = forecastWeatherData.forecastMinTemp + "°C"
             forcastDateLabel.text = forecastWeatherData.forecastDate
                     forcastStatusLabel.text = forecastWeatherData.forecastWeatherStatus
         }

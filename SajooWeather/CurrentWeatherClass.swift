@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 class CurrentWeatherClass {
     private var _currentDate: String!
     private var _currentTemp: String!
@@ -26,8 +27,17 @@ class CurrentWeatherClass {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .none
-        let _temporaryDate = dateFormatter.string(from: Date())
-        self._currentDate = "\(_temporaryDate)"
+      
+        dateFormatter.dateFormat = "YYYY/MM/dd"
+        let persianCalendar = Calendar(identifier: .persian)
+        dateFormatter.calendar = persianCalendar
+        let date = Date()
+        let dateInPersian = dateFormatter.string(from: date)
+        
+        print(dateInPersian)
+        self._currentDate = dateInPersian
+        //------------------------- setting tommorow... 
+        
         return _currentDate
     }
     

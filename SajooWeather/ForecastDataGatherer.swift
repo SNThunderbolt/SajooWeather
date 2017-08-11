@@ -12,10 +12,19 @@ import Alamofire
 class ForecastDataGatherer {
     private var url : String = reqURL
     
-    
     func forecastWeatherDownloader (completed: @escaping (Bool, Any) -> Void) {
-        
-        
+        //-----------------------------------------
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.dateFormat = "EEEE"
+        let persianCalendar = Calendar(identifier: .persian)
+        dateFormatter.calendar = persianCalendar
+        let pDate = Date()
+        let dateInPersian = dateFormatter.string(from: pDate)
+    
+        print(dateInPersian)
+        //self._currentDate = dateInPersian
+        //-----------------------------------------
         let weatherURL = URL(string: url)
         var res : String = ""
         var date, highTemp, lowTemp, status, iconTag : String!
@@ -30,21 +39,28 @@ class ForecastDataGatherer {
                 if let forecast = dict["forecast"] as? Dictionary<String, Any> {
                     if let forecastday = forecast["forecastday"] as? [Dictionary<String, Any>] {
                         for i in 1 ... forecastday.count-1 {
-                            print("\(i)")
+                            //print("\(i)")
                             if let fDate =  forecastday[i]["date"] as? String {
-                                date = fDate
+                                
+                                //--------- setting day of week --------------
+                                let tmp = persianCalendar.date(byAdding: .day, value: +i, to: pDate)
+                                let dayOfWeek = dateFormatter.string(from: tmp!)
+                                print(dayOfWeek)
+                                //---------------------------------------------
+                                date = weekTranslation["\(dayOfWeek)"]
+                                
                                 if let day = forecastday[i]["day"] as? Dictionary<String, Any > {
-                                    if let hTemp = day["maxtemp_c"] as? Float {
+                                    if let hTemp = day["maxtemp_c"] as? Int {
                                         highTemp = "\(hTemp)"
                                     }
-                                    if let lTemp = day["mintemp_c"] as? Float {
+                                    if let lTemp = day["mintemp_c"] as? Int {
                                         lowTemp = "\(lTemp)"
                                     }
                                     if let condition = day["condition"] as? Dictionary<String, Any> {
                                         
                                         if let st = condition["text"] as? String {
                                             status = st
-                                            print("forcasted status\(status!)")
+                                            //print("forcasted status\(status!)")
                                         }
                                         
                                         if let icon = condition["icon"] as? String {
@@ -57,7 +73,7 @@ class ForecastDataGatherer {
                                         forecastTmp = ForecastWeatherClass(forecastDate: date, forecastMinTemp: lowTemp, forecastMaxTemp: highTemp, forecastWeatherStatus: status, forecastWeatherIconTag: iconTag)
                                         if forecastTmp != nil {
                                             forecastData.append(forecastTmp)
-                                            print ("This is array of forcasted data with \(forecastData.count) elements...")
+                                            //print ("This is array of forcasted data with \(forecastData.count) elements...")
                                         }
                                     } else {
                                         forecastTmp = ForecastWeatherClass(forecastDate: "خطا", forecastMinTemp: "خطا", forecastMaxTemp: "خطا", forecastWeatherStatus: "خطا", forecastWeatherIconTag: "خطا")

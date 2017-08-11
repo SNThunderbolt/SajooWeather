@@ -18,10 +18,11 @@ var queryValue = "\(lat),\(long)"
 
 let daysStatement = "&days="
 
-private var daysValue : Int = 7
+private var daysValue : Int = 8
 
 
 //typealias  FinishedDownload = (Bool) -> (Void)
 
 var reqURL = baseURL + key + queryStatement + queryValue + daysStatement + "\(daysValue)"
 
+let weekTranslation = ["Saturday":"شنبه", "Sunday":"یک‌شنبه", "Monday":"دوشنبه", "Tuesday":"سه‌شنبه", "Wednesday":"چهارشنبه", "Thursday":"پنج‌شنبه", "Friday":"جمعه"]

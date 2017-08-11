@@ -37,7 +37,7 @@ class CurrentWeatherGatherer {
                     }
                 }
                 if let current = dict["current"] as? Dictionary<String, Any> {
-                    if let temp_c = current["temp_c"] as? Float {
+                    if let temp_c = current["temp_c"] as? Int {
                         self.temp = "\(temp_c)"
                       //  print("\(temp_c)")
                     }
