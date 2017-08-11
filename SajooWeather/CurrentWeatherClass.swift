@@ -12,7 +12,7 @@ class CurrentWeatherClass {
     private var _currentDate: String!
     private var _currentTemp: String!
     private var _currentStatus: String!
-    private var _currentStatusTag: Int!
+    private var _currentStatusTag: String!
     private var _currentCity: String!
     private var _currentCountry: String!
     private var _temporaryDate: String!
@@ -24,10 +24,10 @@ class CurrentWeatherClass {
             _currentDate = ""
         }
         let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .long
+        dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .none
         let _temporaryDate = dateFormatter.string(from: Date())
-        self._currentDate = "امروز‌‌ء \(_temporaryDate)"
+        self._currentDate = "\(_temporaryDate)"
         return _currentDate
     }
     
@@ -45,9 +45,9 @@ class CurrentWeatherClass {
         return _currentStatus
     }
     
-    var currentStatusTag: Int {
+    var currentStatusTag: String {
         if _currentStatusTag == nil {
-            _currentStatusTag = 0
+            _currentStatusTag = ""
         }
         return _currentStatusTag
     }
@@ -67,7 +67,7 @@ class CurrentWeatherClass {
     }
     
     
-    init(currentTemp: String, currentStatus: String, currentStatusTag: Int, currentCity: String, currentCountry: String) {
+    init(currentTemp: String, currentStatus: String, currentStatusTag: String, currentCity: String, currentCountry: String) {
         _currentTemp = currentTemp
         _currentStatus = currentStatus
         _currentStatusTag = currentStatusTag

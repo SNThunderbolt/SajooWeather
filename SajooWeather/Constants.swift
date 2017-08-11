@@ -12,8 +12,8 @@ let baseURL = "http://api.apixu.com/v1/forecast.json?key="
 let key = "5d2a2b99dad14d1092b151927170408"
 let queryStatement = "&q="
 
-var lat : Float = 43.2
-var long : Float = -12.0
+var lat : Float = 35.74
+var long : Float = 51.46
 var queryValue = "\(lat),\(long)"
 
 let daysStatement = "&days="
