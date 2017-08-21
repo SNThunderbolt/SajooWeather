@@ -26,3 +26,7 @@ private var daysValue : Int = 8
 var reqURL = baseURL + key + queryStatement + queryValue + daysStatement + "\(daysValue)"
 
 let weekTranslation = ["Saturday":"شنبه", "Sunday":"یک‌شنبه", "Monday":"دوشنبه", "Tuesday":"سه‌شنبه", "Wednesday":"چهارشنبه", "Thursday":"پنج‌شنبه", "Friday":"جمعه"]
+
+let weatherStatusTranslation = ["Sunny":"آفتابی", "Cloudy":"ابری", "Partly cloudy":"کمی تا قسمتی ابری", "Overcast":"ابری", "Mist":"غبارآلود", "Patchy rain possible":"بارش پراکنده", "Patchy snow possible":"بارش پراکنده ابر", "Patchy sleet possible":"بارش پراکنده تگرگ", "Patchy freezing drizzle possible":"احتمال بارش پراکنده", "Thundery outbreaks possible":"رعد و برق پراکنده"]
+let cityTranslation = ["Tehran":"تهران", "Isfahan":"اصفهان"]
+let countryTranslation = ["Iran":"ایران"]

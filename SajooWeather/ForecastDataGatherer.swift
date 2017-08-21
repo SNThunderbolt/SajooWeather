@@ -58,8 +58,14 @@ class ForecastDataGatherer {
                                     }
                                     if let condition = day["condition"] as? Dictionary<String, Any> {
                                         
-                                        if let st = condition["text"] as? String {
-                                            status = st
+                                        if let text = condition["text"] as? String {
+                                        
+                                            if let translatedStatus = weatherStatusTranslation[text] as? String {
+                                                status = translatedStatus
+                                            } else {
+                                                status = text
+                                            }
+                                            
                                             //print("forcasted status\(status!)")
                                         }
                                         

@@ -59,7 +59,7 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func updateUIWithCurrentWeatherData (currentWeatherData: CurrentWeatherClass) {
-        self.currentLocationLabel.text = currentWeatherData.currentCity + "," + currentWeatherData.currentCountry
+        self.currentLocationLabel.text = currentWeatherData.currentCity + "، " + currentWeatherData.currentCountry
         self.currentWeatherStatusLabel.text = currentWeatherData.currentStatus
         self.currentTempLabel.text = currentWeatherData.currentTemp + "°C"
         self.currentDateLabel.text = currentWeatherData.currentDate

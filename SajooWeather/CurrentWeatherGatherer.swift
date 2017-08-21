@@ -28,11 +28,21 @@ class CurrentWeatherGatherer {
             if let dict = result.value as? Dictionary<String, Any> {
                 if let location = dict["location"] as? Dictionary<String, Any> {
                     if let city = location["region"] as? String {
-                        self.cityName = city
+                        if let translatedCity = cityTranslation[city] as? String {
+                            self.cityName = translatedCity
+                        } else {
+                            self.cityName = city
+                        }
+                        //
                        // print(city)
                     }
                     if let country = location["country"] as? String {
-                        self.countryName = country
+                        if let translatedCountry = countryTranslation[country] as? String {
+                            self.countryName = translatedCountry
+                        } else {
+                            self.countryName = country
+                        }
+                        
                       //  print(country)
                     }
                 }
@@ -43,7 +53,12 @@ class CurrentWeatherGatherer {
                     }
                     if let condition = current["condition"] as? Dictionary<String,Any> {
                         if let text = condition["text"] as? String {
-                            self.status = text
+                            if let translatedStatus = weatherStatusTranslation[text] as? String {
+                                self.status = translatedStatus
+                            } else {
+                               self.status = text
+                            }
+                            
                             //print(text)
                         }
                         if let code = condition["icon"] as? String {
